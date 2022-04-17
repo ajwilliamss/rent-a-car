@@ -1,0 +1,45 @@
+@import "./variables";
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 75px;
+  z-index: 9999;
+  background: $primary-colour;
+  box-shadow: $nav-box-shadow;
+
+  .logo a {
+    color: $dark-colour;
+  }
+
+  .nav-items {
+    display: flex;
+    gap: 1rem;
+
+    .nav-item a {
+      color: $dark-colour;
+    }
+
+    .nav-item a:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+@media screen and (max-width: 1065px) {
+  .nav {
+    .logo h1 {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 726px) {
+  .nav {
+    display: none;
+  }
+}

@@ -1,0 +1,62 @@
+@import "./variables";
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+
+  label {
+    margin-top: 0.5rem;
+  }
+
+  input {
+    font-size: 1rem;
+    padding: 0.1rem;
+  }
+
+  p {
+    text-align: center;
+    width: 350px;
+    margin-top: 0.5rem;
+  }
+
+  .register-btn {
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 5px;
+    transition: 0.15s ease-in;
+    color: $dark-colour;
+    margin: 1rem 0;
+
+    &:hover {
+      background: $dark-colour;
+      color: $light-colour;
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+    }
+  }
+
+  p a {
+    color: $dark-colour;
+    font-weight: bold;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .register-form {
+    p {
+      width: 280px;
+    }
+  }
+}

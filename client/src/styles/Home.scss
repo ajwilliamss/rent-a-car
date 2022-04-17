@@ -1,0 +1,118 @@
+@import "./variables";
+
+.filters {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+
+  .category-filter,
+  .brand-filter,
+  .search-filter {
+    margin-bottom: 1rem;
+
+    h5 {
+      margin-bottom: 0.25rem;
+    }
+
+    select,
+    input {
+      font-size: 0.95rem;
+      padding: 0.1rem;
+    }
+
+    select {
+      width: 150px;
+    }
+  }
+
+  .search-input {
+    display: flex;
+    align-items: center;
+
+    input {
+      border: none;
+      background-color: $primary-colour;
+      padding: 0.2rem;
+      border-radius: 5px;
+      margin-left: 0.25rem;
+    }
+  }
+}
+
+.cars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 0 2rem;
+
+  .car {
+    display: flex;
+    flex-direction: column;
+    box-shadow: $box-shadow;
+    padding: 1rem;
+
+    .car-img {
+      width: 275px;
+      height: 275px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    h4 {
+      margin-top: 0.5rem;
+      margin-bottom: 0.25rem;
+    }
+
+    p {
+      margin-bottom: 0.75rem;
+    }
+
+    .car-actions {
+      display: flex;
+      align-items: center;
+      .book-btn {
+        padding: 0.5rem;
+        font-size: 1rem;
+        font-weight: bold;
+        background: transparent;
+        border: 1px solid black;
+        border-radius: 5px;
+        transition: 0.15s ease-in;
+        color: $dark-colour;
+
+        &:hover {
+          background: $dark-colour;
+          color: $light-colour;
+        }
+      }
+    }
+
+    .car-icons {
+      margin-left: auto;
+      .delete-btn {
+        background: transparent;
+        border: none;
+        margin-left: 0.5rem;
+      }
+
+      .car-icon {
+        font-size: 1.75rem;
+        cursor: pointer;
+        transition: 0.15s ease-in;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 726px) {
+  .filters {
+    flex-direction: column;
+  }
+}

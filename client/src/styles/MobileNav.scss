@@ -1,0 +1,57 @@
+@import "./variables";
+
+.mobile-nav {
+  display: none;
+}
+
+@media screen and (max-width: 726px) {
+  .mobile-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 75px;
+    z-index: 9999;
+    background: $primary-colour;
+  }
+
+  .mobile-logo h1 {
+    cursor: pointer;
+    font-size: 1.75rem;
+    margin-left: 2rem;
+  }
+
+  .mobile-icon {
+    position: relative;
+    right: 6%;
+    cursor: pointer;
+  }
+
+  .mobile-nav-items {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 75px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    background: $primary-colour;
+    border-top: 1px solid lightgrey;
+  }
+
+  .mobile-nav-items li {
+    margin-top: 1rem;
+  }
+
+  .mobile-nav-items li:last-child {
+    margin-bottom: 1rem;
+  }
+
+  .mobile-nav-items a,
+  .mobile-logo a {
+    text-decoration: none;
+    color: $dark-colour;
+  }
+}

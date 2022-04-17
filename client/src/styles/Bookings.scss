@@ -1,0 +1,78 @@
+@import "./variables";
+
+.my-bookings {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.booking {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  margin: 2rem 3rem;
+  box-shadow: $box-shadow;
+  padding: 0.75rem;
+
+  .booking-info {
+    h4,
+    p {
+      margin: 0.25rem 0;
+    }
+
+    .cancel-btn {
+      padding: 0.5rem;
+      font-size: 1rem;
+      font-weight: bold;
+      background: $delete-colour;
+      border-radius: 5px;
+      transition: 0.15s ease-in;
+      color: $light-colour;
+      border: none;
+      margin-top: 0.25rem;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  .booking-section {
+    .booking-img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+  }
+}
+
+.load-more-btn {
+  text-align: center;
+  button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 5px;
+    transition: 0.15s ease-in;
+    color: $dark-colour;
+    margin: 1rem 0;
+
+    &:hover {
+      background: $dark-colour;
+      color: $light-colour;
+    }
+  }
+}
+
+@media screen and (max-width: 644px) {
+  .booking {
+    grid-template-columns: 1fr;
+    text-align: center;
+
+    .cancel-btn {
+      margin-bottom: 1rem;
+    }
+  }
+}

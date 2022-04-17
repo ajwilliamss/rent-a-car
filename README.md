@@ -10,6 +10,8 @@ In order to go to the individual listing of a car and book it, a user must be lo
 
 # View the site here:
 
+https://ajrentacar.herokuapp.com/
+
 # Screenshot:
 
 # How to use the application:

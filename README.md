@@ -14,6 +14,8 @@ https://ajrentacar.herokuapp.com/
 
 # Screenshot:
 
+![rent a car](https://github.com/ajwilliamss/rent-a-car/blob/main/rentacar.png)
+
 # How to use the application:
 
 - Upon loading the application, you can view the cars, log in or register an account.
